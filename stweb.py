@@ -3,7 +3,7 @@ import pandas as pd
 st.title("Form Application")
 name=st.text_input("NAME:")
 date=st.date_input("DATE OF BRITH:",None)
-age=st.text_input("AGE")
+age=st.number_input("AGE", value=None, min_value=0, max_value=70)
 con=st.text_input("CONTRACT NUMBER")
 id=st.text_input("E-MAIL")
 gen=st.radio(
