@@ -3,7 +3,7 @@ import pandas as pd
 st.title("Form Application")
 name=st.text_input("NAME:")
 date=st.date_input("DATE OF BRITH:",None)
-age=st.text_input("AGE", value=None, min_value=0, max_value=70)
+age=st.text_input("AGE")
 con=st.text_input("CONTRACT NUMBER")
 id=st.text_input("E-MAIL")
 gen=st.radio(
@@ -29,7 +29,7 @@ if st.checkbox(F"I HAVE FULL THE INFORMATION"):
         st.error("ENTER THE NAME ?")
     elif not date:
         st.error("ENTER THE DATE ?")
-    if age<18 or age>=70 :
+    if not age or age<18 or age>=70 :
         st.error("CHECK THE AGE OR 18-70 ?")
     if not con.isdigit or len(con) != 10:
         st.error("CONTRACT NUMBER MUST BE EXACTLY 10 DIGITS.")
