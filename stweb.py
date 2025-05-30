@@ -31,8 +31,6 @@ if st.checkbox(F"I HAVE FULL THE INFORMATION"):
         st.error("ENTER THE DATE ?")
     if age < 18 or age > 70:
        st.error("Age must be between 18 and 70.")
-    else:
-       st.success("Age is valid!")
     if not con.isdigit or len(con) != 10:
         st.error("CONTRACT NUMBER MUST BE EXACTLY 10 DIGITS.")
     if not add:
