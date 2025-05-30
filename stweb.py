@@ -45,9 +45,9 @@ if st.checkbox(F"I HAVE FULL THE INFORMATION"):
         st.error("CHECK THE MOTHRE NAME")
     if not sta:
         st.error("ENTER THE STATE")
-    if not len(Fnums) != 10: 
+    if len(Fnums) != 10: 
         st.error("CHECK THE FATHER NUMBER .")
-    if not len(Mnums) != 10:
+    if len(Mnums) != 10:
         st.error("CHECK THE MOTHER NUMBER.")
 
 st.button("CANCEL")
