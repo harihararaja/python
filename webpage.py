@@ -11,8 +11,6 @@ st.title("JOB APPLICATION FORM")
 camera=st.checkbox("it launch the camera ")
 if camera:
    img=st.camera_input("")
-if not camera:
-    st.error("PLEASE UPLOAD YOUR CURRENT PHOTO")
 st.text("feed the photo of the empolyee")
 name=st.text_input("NAME")
 age=st.number_input("AGE",value=None,max_value=70,step=1)
@@ -37,8 +35,10 @@ Mnums=st.text_input("MOTHER NUMBER:",value=None)
 uploaded_file = st.file_uploader("Choose a the resume", type=["png", "jpg", "jpeg", "pdf", "txt"])
 confirms=st.checkbox("I FEED THE ALL THE INFORMATION ")
 if confirms:
+    if not camera:
+       st.error("PLEASE UPLOAD YOUR CURRENT PHOTO")
     if not name:
-      st.error("CHECK THE NAME !")
+         st.error("CHECK THE NAME !")
     if not age:
         st.error("ENTER THE AGE !")
     if not con or len(con) != 10:
