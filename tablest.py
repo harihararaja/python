@@ -12,7 +12,7 @@ conn = None
 # Function to connect to MySQL
 def connect_to_db():
     return pymysql.connect(
-        host="localhost",
+        host="3306",
         user="root",
         password="",
         database="polling_list",
