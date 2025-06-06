@@ -4,7 +4,7 @@ import pandas as pd
 
 # Page config
 st.set_page_config(page_title="Full MySQL Database Viewer", layout="wide")
-st.title("📋 Complete XAMPP MySQL Database: `polling_list`")
+st.title(" Complete XAMPP MySQL Database: `polling_list`")
 
 # Initialize connection variable
 conn = None
@@ -12,7 +12,7 @@ conn = None
 # Function to connect to MySQL
 def connect_to_db():
     return pymysql.connect(
-        host="3306",
+        host="",
         user="root",
         password="",
         database="polling_list",
@@ -29,7 +29,7 @@ try:
     tables = [row[0] for row in cursor.fetchall()]
 
     if tables:
-        st.success(f"✅ Found {len(tables)} table(s) in the database.")
+        st.success(f" Found {len(tables)} table(s) in the database.")
         for table_name in tables:
             st.subheader(f"📌 Table: `{table_name}`")
             try:
