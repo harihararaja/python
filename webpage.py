@@ -8,12 +8,13 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 st.title("JOB APPLICATION FORM")
+<<<<<<< HEAD
 camera=st.checkbox("it launch the camera ")
 if camera:
    img=st.camera_input("")
-if not camera:
-    st.error("PLEASE UPLOAD YOUR CURRENT PHOTO")
 st.text("feed the photo of the empolyee")
+=======
+>>>>>>> a4c39601c1d8a67402d0e6d6d417c42b4a5d840e
 name=st.text_input("NAME")
 age=st.number_input("AGE",value=None,max_value=70,step=1)
 date=st.date_input("DATE OF BRITH:",None)
