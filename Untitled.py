@@ -45,8 +45,8 @@ def parse_polling_data(raw_text):
     return records
 
 # Input/output paths
-pdf_path = "C:\\Users\\Hari Hara Rajan\\Pictures\\poling5.pdf"
-json_output_path = "C:\\Users\\Hari Hara Rajan\\Pictures\\structures_hello.json"
+pdf_path = "C:\\Users\\Hari Hara Rajan\\Pictures\\p10.pdf"
+json_output_path = "C:\\Users\\Hari Hara Rajan\\Pictures\\p10.json"
 
 # Process PDF and extract structured data
 pdf_text = extract_text_from_pdf(pdf_path)
